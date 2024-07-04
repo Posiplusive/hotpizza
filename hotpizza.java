@@ -28,7 +28,7 @@ public class hotpizza {
     public static final double LEMON_TEA = 1.50;
 
     public static void jenis() {
-        System.out.println("%nPilih nombor untuk jenis pizza:");
+        System.out.println("\nPilih nombor untuk jenis pizza:");
         String[] jenisPizza = {"Aloha Chicken", "Beef Pepperoni", "Chicken Delight", "Deluxe Cheese", "Island Tuna"};
         for (int i = 0; i < jenisPizza.length; i++) {
             System.out.printf("%s. %s%n", i + 1, jenisPizza[i]);
@@ -161,7 +161,7 @@ public class hotpizza {
                     case 3 -> LEMON_TEA;
                     default -> hargaMinuman;
                 };
-                System.out.printf("Anda telah memilih saiz %s%n%n", minuman[pilihanMinuman - 1]);
+                System.out.printf("Anda telah memilih minuman %s%n%n", minuman[pilihanMinuman - 1]);
             } catch (Exception e) {
                 System.out.println("Pilihan tiada dalam senarai.");
             }
