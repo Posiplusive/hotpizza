@@ -179,7 +179,11 @@ public class hotpizza {
         System.out.println("=====================================");
         System.out.printf("Harga pizza: RM %s%n", i.format(harga));
         System.out.printf("Harga minuman: RM %s%n", i.format(hargaDrink));
-        System.out.printf("Jumlah harga: RM %s%n", i.format(harga + hargaDrink));
+        System.out.printf("Jumlah harga: RM %s%n%n", i.format(harga + hargaDrink));
+        if (harga > 12.00) {
+            System.out.print("Diskaun: RM 1.00\n");
+            System.out.printf("Harga selepas diskaun: RM %s", i.format((harga + hargaDrink) - 1.00));
+        }
     }
 
     public static void main(String[] args) {
